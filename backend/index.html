@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>BLOG</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>BLOGS</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ea tempore error architecto. Eligendi a provident
+      exercitationem cum quisquam deleniti incidunt aperiam ipsum placeat totam quos explicabo, fuga possimus iure!</p>
+      <hr>
+
+      <div class="row">
+        <form id="add-blog">
+            <label for="newTitle">Enter New Blog Title & Author</label>
+            <br><br>
+            <input name="new_blog" type="text">
+            <button type="submit">Submit</button>
+            <br> <br>
+            <input name="new_blog" type="text">
+            <button type="submit">Submit</button>
+          <br>
+          <hr>
+          <label for="newBlog">Write New Blog</label>
+          <br><br>
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+            Enter text here...</textarea>
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+
+
+
+<!-- //Righ Here  -->
+    <script>
+         fetch("/blogs").then(res => res.json()).then(data => {
+    console.log(data)
+  })
+    </script>
+</body>
+</html>

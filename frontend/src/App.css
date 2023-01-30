@@ -1,0 +1,339 @@
+/* postgres://ownaeebr:diD7xGuoK_6jf4z_3gmuPe1_OIY3gyqk@stampy.db.elephantsql.com/ownaeebr */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.no-border {
+  border: none;
+}
+.input-width {
+  width: 55%;
+}
+.submit-width {
+  width: 10%;
+}
+
+.name {
+  font-size: 1px;
+}
+.transparent-bg {
+  background: transparent;
+}
+.custom-button {
+  border: none; /* no border */
+  background-color: transparent; /* transparent background */
+  color: white; /* white text color */
+  font-size: 28px;
+}
+.white-text {
+  color: white;
+}
+
+/* Horus */
+.container6 {
+  background-image: url('eye.png');
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 960px;
+  background-position-x: 940px;
+  background-position-y: 0px;
+}
+
+.container4 {
+  background-image: url('eye.png');
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 960px;
+  background-position-x: 1040px;
+  background-position-y: 45px;
+  left: 220px;
+  height: 1200px;
+}
+/* .container3 {
+  background-image: url('eye2.png');
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 960px;
+  background-position-x: 840px;
+  background-position-y: 1px;
+} */
+
+/* //the whole eye  */
+.eye-outer {
+  width: 200px;
+  height: 200px;
+  border-radius: 100% 0;
+	background: linear-gradient(-45deg, #ee7752,white, #e73c7e, #23a6d5, #23d5ab);
+  margin: auto;
+  transform: rotate(45deg);
+  position: relative;
+  overflow: hidden;
+  left: 110px;
+  top: 25px;
+}
+.input-width {
+  width: 30px;
+}
+.input-height {
+  height: 30px; 
+}
+
+.but-height{
+  height: 20px;
+}
+
+.eye-outer::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: rgb(21, 21, 21);
+  /* drops down but stags to open */
+  top: -65px;
+  right: -18px;
+  transform: rotate(315deg);
+
+  animation: closeDown 7.5s ease-in-out infinite alternate;
+
+  z-index: 900;
+
+}
+
+@keyframes closeDown {
+0% {
+  top: 45px;
+}
+20% {
+  top: 45px;
+}
+
+}
+
+
+.eye-outer::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: rgb(21, 21, 21);
+  bottom: -60px;
+  transform: rotate(135deg);
+  left: -20px;
+  animation: closeUp 7.5s ease-in-out infinite alternate;
+  transition-timing-function: ease-in;
+}
+
+@keyframes closeUp {
+  20% {
+    bottom: 46px;
+  }
+  0% {
+    bottom: 65px;
+  }
+}
+/* This give space for that button to breathe */
+.task {
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+/* 0% {
+  top: 45px;
+}
+20% {
+  top: 45px;
+} */
+
+.eye-inner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background: grey; */
+  background-image: url('eye.jpg');
+  opacity: 0.6;
+  position: absolute;
+  top: 47px;
+  left: 53px;
+  animation: rotate 7.5s ease-in-out infinite;
+  transition-timing-function: ease-in-out ;
+}
+
+.custom-h1 {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width:600px;
+margin-left: 225px;
+}
+
+.custom-link1 {
+  text-decoration: none;
+  /* padding: 10px 20px; */
+  color: white;
+  /* text-align: center; */
+  cursor: pointer;
+  /* width:auto; */
+  margin-left: 780px;
+  text-align: right;
+font-size: 22px;
+}
+.custom-link3 {
+  text-decoration: none;
+  /* padding: 10px 20px; */
+  color: white;
+  /* text-align: center; */
+  cursor: pointer;
+  width:auto;
+  margin-left: 960px;
+  text-align: right;
+font-size: 22px;
+}
+
+.custom-link2 {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 40px;
+  font-size: 22px;
+
+}
+
+
+.inner-circle {
+  /* background-image: url('eye.gif'); */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: black;
+  margin: 12px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  
+}
+.TaskList{
+  margin-left: 55px;
+}
+#root {
+ 
+  min-height: 100%;
+  /* height: 1700px; */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 600%;
+	animation: gradient 25s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.App ul {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+}
+.App ul li {
+  line-height: 40px;
+  position: relative;
+  padding: 30px 16px 0 32px;
+}
+.App ul li .handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+}
+.App ul li .handle-content {
+  font-weight: bold;
+  position: relative;
+  left: 8px;
+  bottom: 2px;
+}
+.App ul li .handle:hover {
+ cursor: -moz-grabbing;
+ 
+}
+
+.App form{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100px;
+}
+
+.App form input[type="text"], .App form input[type="submit"] {
+  flex: 1;
+  margin-right: 1px;
+}
+
+.submit-button {
+  height: 30px;
+  margin-top: 20px;
+  width: 100px;
+  padding: 0%;
+}
+
+.DidIt-button {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 10%;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+
+}
+
+.edit-button {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 10%;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+
+}
+
+.delete-button {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 10%;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+
+}
+
+.btn-sp2 {background-color: #607D8B; color: #fff; border-radius: 8px;}
+  .btn-sp2 {border-color: #607D8B; color: #fff;}
+
+
+

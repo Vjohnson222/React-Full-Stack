@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import People from "./People";
 
-function Profile() {
+function Profile(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [info, setInfo] = useState([]);
   const [showForm, setShowForm] = useState(true);
+  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
     fetch("/people")
@@ -20,6 +21,7 @@ function Profile() {
     event.preventDefault();
     const name = event.target.newName.value;
     const email = event.target.newEmail.value;
+    setIsHidden(true);
 
     fetch("http://localhost:3002/people", {
       method: "POST",
@@ -31,6 +33,7 @@ function Profile() {
       .then((res) => res.json())
       .then((data) => {
         setShowForm(false);
+        props.setLoggedIn(true)
       });
   };
 
@@ -39,29 +42,34 @@ function Profile() {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <br />
-          <h5>Enter Name</h5>
-        </div>
-        <div className="col-6">
-          <br />
-          <h5>Enter Email</h5>
-        </div>
-      </div>
+
+<div className="container"> <br /> <br />
+{!isHidden ? (
+  <div className="row formLabels">
+   
+          <h1>Create a User Profile</h1>
+
+    <div className="col-3">
+      <br />
+      <h6>Enter Name</h6>
+    </div>
+    <div className="col-4 offset-1">
+      <br />
+      <h6>Enter Email</h6>
+    </div>
+  </div>
+) : null}
       {showForm && (
+        
         <form
-          className="form-group d-flex w-60"
-          style={{ width: "70%" }}
-          autoComplete="off"
+          className=" d-flex w-60"
+          style={{ width: "75%", display: "flex", justifyContent: "center" }}
           onSubmit={handleSubmit}
         >
           <input
             className="form-control input-width p-1 text-xs mx-2 input-height"
             type="text"
-            name="newName"
-            required
+            name="newName"           
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -74,7 +82,7 @@ function Profile() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <br />
-          <br />
+          
           <button
             type="submit"
             className="form-control p-1 text-xs mx-2 input-height"
@@ -85,11 +93,19 @@ function Profile() {
         </form>
       )}
       {!showForm && (
-        <div>Hello {name} Welcome to our Task Management portal </div>
+              <div style={{  position: "absolute", right: "28%",marginLeft: "120px", top: "102px", color: "white", fontSize: "22px"}}><h3>Hello {name} </h3>
+              <h3>Welcome to your Task Management portal</h3>
+              <p> 1. Take a look around.  </p>
+               <p> 2. Use the "Task Management section to complete the needed tasks and earn points as you do.</p>
+               <p> 3. Another awesome option is to visit the "Extra Page".</p>
+               <p>  4. Here you will be presented with a sequence of steps that will enable you to create a database and connect it to your working application</p> 
+               <p> 5. The fun /Extra part is you will most likely have to do this several times throughout your web-dev career.</p> 
+               <p> 6. Lastly. Feel free to hit the "Show all Users" button above to see others in our web-dev community</p> 
+               </div>
       )}
       <div>
         <div>
-          <span style={{ position: "absolute", right: "8%", top: "30px" }}>
+          <span style={{ position: "absolute", right: "8%", top: "27px" }}>
             <People />
           </span>
         </div>

@@ -11,23 +11,12 @@ function TaskList({ tasks, updateTasks }) {
     console.log(tasks);
   }, [tasks]);
 
-  // const countPoints = (searchIndex) => {
-  //   let taskPoints = tasks[searchIndex].points;
-  //   if (tasks[searchIndex].pointsAwarded === false) {
-
-  //     tasks[searchIndex].pointsAwarded = true;
-  //   } else {
-
-  //     alert(".........GREAT JOB!!!! ................. 🥳 ............  POINTS EARNED 🎉.......................  NOW GO DO SOMETHING ELSE 🥂.");
-
-  //   }
   const countPoints = (searchIndex) => {
     let taskPoints = tasks[searchIndex].points;
     if (tasks[searchIndex].pointsAwarded === false) {
-      tasks[searchIndex].points = formData.points; // set the points for the task using the value from the input field
+      tasks[searchIndex].points = formData.points; 
       tasks[searchIndex].pointsAwarded = true;
     } else {
-      // rest of the code to award points and update UI
       document.getElementById("task-button").disabled = true;
     }
 
@@ -67,21 +56,7 @@ function TaskList({ tasks, updateTasks }) {
     setFormData(tasks[index]);
   };
 
-  // const handleEditSubmit = (event, index) => {
-  //   event.preventDefault();
-  //   let newTasks = [...tasks];
-  //   newTasks[index] = formData;
-  //   updateTasks(newTasks);
-  //   setEditIndex(null);
-  // };
 
-  // const handleEditSubmit = (event, index) => {
-  //   event.preventDefault();
-  //   let newTasks = [...tasks];
-  //   newTasks[index] = { ...newTasks[index], name: formData.name, points: formData.points };
-  //   updateTasks(newTasks);
-  //   setEditIndex(null);
-  // };
   const handleEditSubmit = (event, index) => {
     event.preventDefault();
     let newTasks = [...tasks];
@@ -93,15 +68,15 @@ function TaskList({ tasks, updateTasks }) {
 
   return (
     <div className="container2 TaskList ">
-      <div>
+    
         <div className="row">
           <div className="col-6">
-            <br />
-            <h5 className="custom-link2">Drag and Drop to re-order Tasks</h5>
+          
+            <h6 className="formLabels">Drag and Drop to re-order Tasks</h6>
           </div>
           <div className="col-6">
             <br />
-            <h5>Points Earned: {points}</h5>
+            <h6 className="formLabels" >Points Earned: {points}</h6>
           </div>
         </div>
 
@@ -137,6 +112,7 @@ function TaskList({ tasks, updateTasks }) {
                 >
                   Edit
                 </button>
+                <br />
                 {editIndex === index && (
                   <form
                     className="form-group d-flex w-60"
@@ -153,7 +129,7 @@ function TaskList({ tasks, updateTasks }) {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      style={{ width: "250px", display: "inline-block" }}
+                      style={{ width: "250px", background:"transparent", display: "inline-block" }}
                     />
                     <input
             className="form-control input-width p-1 text-xs mx-2 input-height"
@@ -164,14 +140,14 @@ function TaskList({ tasks, updateTasks }) {
                       onChange={(e) =>
                         setFormData({ ...formData, points: e.target.value })
                       }
-                      style={{ width: "90px", display: "inline-block" }}
+                      style={{ width: "90px",background:"transparent", display: "inline-block" }}
                     />
                            <button
             type="submit"
             className="form-control p-1 text-xs mx-2 input-height"
-            style={{ width: "calc(50% - 10px)" }}
+            style={{ width: "10%",background:"transparent"}}
           >
-            Submit
+            Save
           </button>
                   </form>
                 )}
@@ -179,7 +155,7 @@ function TaskList({ tasks, updateTasks }) {
             </li>
           ))}
         </ul>
-      </div>
+      
     </div>
   );
 }

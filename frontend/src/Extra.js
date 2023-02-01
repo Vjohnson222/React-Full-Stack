@@ -3,27 +3,26 @@ import React, { useState } from "react";
 
 function Extra() {
     const [funList, updateFunList] = useState([
-      { id: 1, name: "12. build a server with express so that it’s listen at local hist 3000", points: 10 },
+      { id: 1, name: "12. Build a server with express so that it’s listening at localhost 3000" },
       { id: 2, name: "16. Next run the model migration", points: 20 },
       { id: 3, name: "3. In Be Keeper – Select:  Import From URL", points: 30 },
-      { id: 4, name: "14. Build your models with Sequelize", points: 40 },
+      { id: 4, name: "14. Build your Models with Sequelize", points: 40 },
       { id: 1, name: "4. Create a new folder on your device and name it accordingly", points: 10 },
       { id: 2, name: "8. Initialize Sequelize with Sequelize init – This creates the CLI", points: 20 },
       { id: 3, name: "10. Time to build a server", points: 30 },
-      { id: 4, name: "19. Go into the migrations and update the nullable status to allowNull: false,", points: 40 },
-      { id: 1, name: "1. Create a DB – Elephant SQL – Create a new Instance", points: 10 },
-      { id: 2, name: "20. Declare your associations", points: 20 },
+      { id: 4, name: "19. Go into the migrations and update the nullable status to allowNull: false", points: 40 },
+      { id: 1, name: "1. Create a DB – Go to Elephant SQL – Create a new Instance", points: 10 },
+      { id: 2, name: "20. Declare your associations (if needed)", points: 20 },
       { id: 3, name: "5. Open that folder in your code editor", points: 30 },
       { id: 4, name: "11. Create a server.js file", points: 40 },
-      { id: 1, name: "15.Try this for an example sequelize model:generate --name blog --attributes title:string, author:string", points: 10 },
+      { id: 1, name: "15.Here's an example: sequelize model:generate --name blog --attributes title:string, author:string", points: 10 },
       { id: 1, name: "19.Go into the migrations and updatethe nullable status to allowNull: false, author:string", points: 10 },
-      { id: 3, name: "6. Next npm init -y", points: 30 },
+      { id: 3, name: "6. Next- npm init -y", points: 30 },
       { id: 4, name: "2. Grab the Database Link and head over to Beekeeper", points: 40 },
-      { id: 4, name: "	9. Update the config.json with the appropriate Database information", points: 40 },
+      { id: 4, name: "9. Update the config.json with the appropriate Database information", points: 40 },
       { id: 4, name: "17. Next !!!! Run the migration with ", points: 40 },
-      { id: 4, name: "	21. Create your first end point with a Getrequest", points: 40 },
+      { id: 4, name: "21. Create your first endpoint with a Get request", points: 40 },
       { id: 4, name: "13. Test it ", points: 40 },
-
       { id: 4, name: "7. Install the dependencies express Sequelize pg pg-hstore", points: 40 },
 
 
@@ -92,10 +91,9 @@ function Extra() {
     }
     const handleEditSubmit = (event, index) => {
         event.preventDefault();
-        let newFun = [...funList]; //fix here
+        let newFun = [...funList]; 
         newFun[index] = formData;
-        updateFunList(newFun); //fix here
-        setEditIndex(null);
+        updateFunList(newFun); 
       };
     
   return (
@@ -103,7 +101,7 @@ function Extra() {
     <div className="container4 Extra">
       <br />
                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-    <h5 style={{ color: "black"}}>Reorder The Steps Below for Proper Sequence</h5>
+    <h5 style={{ color: "black"}}>Drag to Reorder The Steps Below for Proper Sequence</h5>
 </div>
 
 
@@ -111,17 +109,15 @@ function Extra() {
         <div className="row">
           <div className="col-6">
             <br />
-            {/* <h5>Drag and Drop to re-order Fun</h5> */}
           </div>
           <div className="col-6">
             <br />
-            {/* <h5>Points Earned: {points}</h5> */}
           </div>
         </div>
 
         <ul style={{ listStyleType: "none" }}>
-        {funList.map((item, index) => ( // fix here
-        // Stling is added here 
+        {funList.map((item, index) => ( 
+       
 <li className="task"
               key={index}
               style={{ position: "relative", margin: "20px 20px" }}
@@ -135,49 +131,32 @@ function Extra() {
               >
                 <span className="content">{item.name}</span>
                 
-                {/* //Right Here Delete attempt2 */}
-
-                {/* <button
-                  className="delete-button but-height"
-                  onClick={() => {
-                    deleteTask(index);
-                  }}> Delete </button> */}
-{/* <Delete fun={fun} updateFun={updateFun} index={index} /> */}
-
-                {/* <button
-                  className="DidIt-button but-height"
-                  onClick={() => {
-                    countPoints(index);
-                  }}
-                >
-                  Did It!
-                </button> */}
-                <button
+                            <button
                   className="edit-button but-height"
                   onClick={() => handleEditClick(index)}
                 type="submit" style={{ background: 'transparent', borderStyle: 'solid', borderColor: 'black', color: 'black', width: '70px', padding: '5px' }}>
                   Edit
                 </button>
                 {editIndex === index && (
-                 <form className="form-inline" onSubmit={(event) => handleEditSubmit(event, index)}>
-                 <input
-                     className="form-control input-width mx-2 input-height"
-                     type="text"
-                     name="name"
-                     value={formData.name}
-                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                     style={{ width: "250px", display: "inline-block"}}
-                 />
-                 {/* <input
-                     className="form-control input-width input-height"
-                     type="number"
-                     name="points"
-                     value={formData.points}
-                     onChange={(e) => setFormData({ ...formData, points: e.target.value })}
-                     style={{ width: "90px", display: "inline-block"}}
-                 /> */}
-                 <input type="submit" className="btn btn-sp2 input-height" value="Save" style={{ display: "inline-block"}} />
+               <form className="form-inline" style={{ display: "flex", alignItems: "center", backgroundColor: "transparent" }} onSubmit={(event) => handleEditSubmit(event, index)}>
+               <input
+                 className="form-control input-width mx-2 input-height"
+                 type="text"
+                 name="name"
+                 value={formData.name}
+                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                 style={{ width: "250px", background:"transparent",display: "inline-block", marginRight: 10 }}
+               />
+             
+               <button
+                 type="submit"
+                 className="form-control p-1 text-xs mx-2 input-height"
+                 style={{ width: "10%", background:"transparent" }}
+               >
+                 Save
+               </button>
              </form>
+             
              
                 )}
               </div>

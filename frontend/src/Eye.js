@@ -9,16 +9,16 @@ const Eye = () => {
   fontFamily: 'Great Vibes, cursive',
   textAlign: 'center',
   fontSize: '70px',
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  marginleft: '120px'
   
 };
 
   const divStyle = { display: 'inline-block' };
   return (
-    <div className="container6">
+    <div className="eyeContainer">
       
       <br /><br /><br />
-    <h2></h2>
       <h1 style={h1Style}><p>Stay Focussed</p>Keep your Eye on the Prize</h1>
 
       <div className="eye-outer" style={divStyle}>
@@ -26,6 +26,7 @@ const Eye = () => {
           <div className="inner-circle"></div>
         </div>
       </div>
+      
     </div>
   );
 }

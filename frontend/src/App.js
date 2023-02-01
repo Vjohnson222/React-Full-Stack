@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TaskList from './TaskList';
-
 import Form from './Form';
-import People from "./People";
-//Leave this here to use as a future button Part1
-// import Sequences from "./Sequences";
 
 
 function App() {
@@ -26,42 +22,10 @@ function App() {
       .then(data => (data));
   }, []);
 
-
-  //Leave this here to use as a future button Part2
-  // const [isVisible, setIsVisible] = useState(false);
-
-  //Leave this here to use as a future button Part3
-  // const toggleVisibility = () => { setIsVisible(!isVisible); }
-
-
-
-  
-    // fix this 
-
-    // return (
-    //   <div className="App">
-    //     <h1>Persons List Posts</h1>
-    //     <ul>
-    //       {people.map(person => (
-    //         <li key={person.id}>
-    //           <h2>{person.name}</h2>
-    //           <h3>{person.email}</h3>
-    //           
-    //         </li>
-    //       ))}
-    //     </ul>
-    //   </div>
-    // );
   
   return (
     
-
-    
     <div>
-      {/* //Leave this here to use as a future button Part1
-      <button onClick={toggleVisibility} className="no-border transparent-bg white-text"> Sequencer</button>
-    {isVisible && <Sequences className="no-border transparent-bg white-text"/>} */}
-
       <Form tasks={tasks} updateTasks={updateTasks} /> 
       <TaskList tasks={tasks} updateTasks={updateTasks}  />   
        </div>

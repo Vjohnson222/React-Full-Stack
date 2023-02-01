@@ -1,6 +1,6 @@
 //This used to be the App.js from Frontend 2
 //So when I pull up that functioning people
-// This is the part that if I'm not mistaken shows the peple 
+// This is the part that if I'm not mistaken shows the people 
 
 //Cool so the only thing missing now is to do the comparison
 // and disection on the 2 different Forms Fingers crossed :) 

@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState } from "react";
-// import Sequence from './Sequences';
 
 //No no this is the form for the Tasklist component, you need profiles
 function Form({ tasks, updateTasks }) {
@@ -22,38 +21,33 @@ function Form({ tasks, updateTasks }) {
     setFormData({ name: "", points: 0 });
   };
 
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // }
-
+  
   return (
-    <div className="container6">
-      {/* <button onClick={toggleVisibility} className="no-border transparent-bg white-text"> Sequencer</button>
-    {isVisible && <Sequence className="no-border transparent-bg white-text"/>} */}
-
+    <div className="container eyeContainer ">
       <div>
-        <div className="row">
-          <div className="col-6">
+        <div className="row  formLabels">
+          <div className="col-4">
             <br />
-            <h5>Enter New Tasks</h5>
+            <h6>Enter New Tasks</h6>
           </div>
           <div className="col-6">
             <br />
-            <h5>Enter PointValue</h5>
+            <h6>Add PointValue</h6>
           </div>
         </div>
         <form
           className="form-group d-flex w-60"
-          style={{ width: "70%" }}
+          style={{ width: "60%" }}
           autoComplete="off"
           onSubmit={handleSubmit}
         >
           <input
-            className="form-control input-width p-1 text-xs mx-2 input-height"
+            className="form-control  text-xs mx-2 input-height"
             type="text"
             name="name"
             required
             value={formData.name}
+            style={{ width: "60%" }}  
             onChange={(e) =>
               setFormData({ name: e.target.value, points: formData.points })
             }
@@ -65,6 +59,7 @@ function Form({ tasks, updateTasks }) {
             name="points"
             required
             value={formData.points}
+            style={{ width: "20%" }}  
             onChange={(e) =>
               setFormData({
                 name: formData.name,
@@ -76,11 +71,12 @@ function Form({ tasks, updateTasks }) {
 <button
             type="submit"
             className="form-control p-1 text-xs mx-2 input-height"
-            style={{ width: "calc(20% - 10px)" }}
+            style={{ width: "calc(20% - 10px)", paddingTop: "0px"  }}
           >
             Submit
           </button>
         </form>
+        <hr />
       </div>
     </div>
   );

@@ -30,33 +30,8 @@ function Extra() {
     // const [points, updatePoints] = useState(0);
     const [editIndex, setEditIndex] = useState(null);
     const [formData, setFormData] = useState({ name: "", points: 0 });
-    // const [hasDeliveredPoints, setHasDeliveredPoints] = useState(false);
+
   
-    // const handleSubmit = (event) => {
-    //   event.preventDefault();
-    //   let newFun = funList.concat([formData]);
-    //   updateFunList(newFun);
-    //   setFormData({name: "", points: 0});
-    // }
-  
-    //Right Here Delete attempt1
-    // const deleteTask = (searchIndex) => {
-    //   let newFun = funList.filter((_, i) => i !== searchIndex);
-    //   updateFunList(newFun);
-    // };
-  
-    // const countPoints = (searchIndex) => {
-    //   let taskPoints = funList[searchIndex].points;
-    //   if (funList[searchIndex].pointsAwarded === false) {
-    //     // award points and update property to true
-    //     funList[searchIndex].pointsAwarded = true;
-    //     updatePoints(points + taskPoints);
-    //   } else {
-    //     // prevent points from being awarded again
-    //     alert(".........GREAT JOB!!!! ................. 🥳 ............  POINTS EARNED 🎉.......................  NOW GO DO SOMETHING ELSE 🥂.");
-    //   }
-    // };
-    //
     const [draggedIndex, setDraggedIndex] = useState(null);
   
     const handleDragStart = (event, index) => {

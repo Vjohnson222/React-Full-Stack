@@ -3,7 +3,6 @@ import App from "./App";
 import Eye from "./Eye";
 import Profile from "./Profile";
 import Extra from "./Extra";
-import People from "./People";
 
 //Straight From our router Lesson
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -51,3 +50,4 @@ function App2() {
 }
 
 export default App2;
+

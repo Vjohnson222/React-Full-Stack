@@ -10,7 +10,8 @@ const Eye = () => {
   textAlign: 'center',
   fontSize: '70px',
   fontWeight: 'bold',
-  marginleft: '120px'
+  marginLeft: '120px', 
+  marginTop: '80px'
   
 };
 
@@ -21,11 +22,11 @@ const Eye = () => {
       <br /><br /><br />
       <h1 style={h1Style}><p>Stay Focussed</p>Keep your Eye on the Prize</h1>
 
-      <div className="eye-outer" style={divStyle}>
+      {/* <div className="eye-outer" style={divStyle}>
         <div className="eye-inner">
           <div className="inner-circle"></div>
         </div>
-      </div>
+      </div> */}
       
     </div>
   );

@@ -93,15 +93,14 @@ function Profile(props) {
         </form>
       )}
       {!showForm && (
-              <div style={{  position: "absolute", right: "28%",marginLeft: "120px", top: "102px", color: "white", fontSize: "22px"}}><h3>Hello {name} </h3>
+              <div style={{ position: "absolute", right: "28%",marginLeft: "120px", top: "102px", color: "white", fontSize: "22px"}}><h3>Hello {name},</h3>
               <h3>Welcome to your Task Management portal</h3>
-              <p> 1. Take a look around.  </p>
-               <p> 2. Use the "Task Management section to complete the needed tasks and earn points as you do.</p>
-               <p> 3. Another awesome option is to visit the "Extra Page".</p>
-               <p>  4. Here you will be presented with a sequence of steps that will enable you to create a database and connect it to your working application</p> 
-               <p> 5. The fun /Extra part is you will most likely have to do this several times throughout your web-dev career.</p> 
-               <p> 6. Lastly. Feel free to hit the "Show all Users" button above to see others in our web-dev community</p> 
-               </div>
+              <p>Take a look around.</p> 
+<p style={{ textIndent: '30px',}}>Use the "Task Management" section to complete the needed tasks and earn points as you do.</p>
+<p style={{ textIndent: '30px',}}>Another awesome option is to visit the "Extra Page". Here you will be presented with a sequence of steps that will enable you to create a database and connect it to your working application. Pay close attention here. You will most likely have to do this several times throughout your web-dev career.</p>
+<p style={{ textIndent: '30px',}}> Lastly, feel free to hit the "Show all Users" button above to see and connect with others in your web-dev community.</p>
+</div>
+
       )}
       <div>
         <div>

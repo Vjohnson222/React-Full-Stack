@@ -30,26 +30,31 @@
 .white-text {
   color: white;
 }
+.ddot{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
+}
 /* Horus */
 .eyeContainer {
   background-image: url('eye.png');
   background-repeat: no-repeat;
-  background-size: 60px;
-  background-position: 960px;
-  background-position-x: 940px;
-  background-position-y: 0px;
-  margin-left: 80px;
+  background-size: 100px;
+  background-position: 860px;
+  background-position-x: 740px;
+  background-position-y: 20px;
+  margin-left: 160px;
+  
 }
 
 .container6 {
   background-image: url('eye.png');
   background-repeat: no-repeat;
   background-size: 60px;
-  background-position: 960px;
-  background-position-x: 940px;
+  background-position: 860px;
+  background-position-x: 1040px;
   background-position-y: 0px;
-  margin-left: 80px;
+  margin-left: 160px;
 }
 /* For Extra  */
 .container4 {
@@ -57,9 +62,10 @@
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: 960px;
+  /* left to right  */
   background-position-x: 1040px;
-  background-position-y: 45px;
-  left: 220px;
+  background-position-y: 15px;
+  left: 200px;
   height: 1200px;
 }
 .row {

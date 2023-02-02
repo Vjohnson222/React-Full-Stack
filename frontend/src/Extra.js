@@ -30,8 +30,6 @@ function Extra() {
     // const [points, updatePoints] = useState(0);
     const [editIndex, setEditIndex] = useState(null);
     const [formData, setFormData] = useState({ name: "", points: 0 });
-
-  
     const [draggedIndex, setDraggedIndex] = useState(null);
   
     const handleDragStart = (event, index) => {

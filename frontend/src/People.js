@@ -14,7 +14,7 @@ const [isVisible, setIsVisible] = useState(false);
 //This right here is what you server has to say when you call it - 3000
 //This is my Database This port has to say the same as your server
 useEffect(() => {
-fetch("http://localhost:3002/people")
+fetch("http://localhost:3001/people")
 .then(res => res.json())
 .then(data => setPeople(data));
 }, []);

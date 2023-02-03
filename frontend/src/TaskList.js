@@ -21,7 +21,8 @@ function TaskList({ tasks, updateTasks }) {
     }
 
     updatePoints(points + taskPoints);
-    let newTasks = tasks.filter((_, i) => i !== searchIndex);
+    // let newTasks = tasks.filter((_, i) => i !== searchIndex);
+    
   };
 
   const [draggedIndex, setDraggedIndex] = useState(null);

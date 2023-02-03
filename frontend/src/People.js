@@ -6,7 +6,6 @@
 // and disection on the 2 different Forms Fingers crossed :) 
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Profile from './Profile';
 
 function People() {
 const [people, setPeople] = useState([]);

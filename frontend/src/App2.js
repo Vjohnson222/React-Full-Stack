@@ -11,10 +11,7 @@ function App2() {
 
   const [loggedIn, setLoggedIn] = useState(false);
 
-  const h1Style = {
-       fontSize: "40px",
-        color: "black",
-  };
+ 
   return (
     <Router>
       <br />

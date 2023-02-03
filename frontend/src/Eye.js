@@ -15,7 +15,6 @@ const Eye = () => {
   
 };
 
-  const divStyle = { display: 'inline-block' };
   return (
     <div className="eyeContainer">
       

@@ -40,12 +40,10 @@
   background-image: url('eye.png');
   background-repeat: no-repeat;
   background-size: 100px;
-  background-position: 860px;
-  background-position-x: 740px;
-  background-position-y: 20px;
-  margin-left: 160px;
-  
+  background-position-x: 74%;
+  background-position-y: 20%;
 }
+
 
 .container6 {
   background-image: url('eye.png');

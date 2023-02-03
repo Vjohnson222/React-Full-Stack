@@ -23,7 +23,7 @@ function Profile(props) {
     const email = event.target.newEmail.value;
     setIsHidden(true);
 
-    fetch("http://localhost:3002/people", {
+    fetch("http://localhost:3001/people", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

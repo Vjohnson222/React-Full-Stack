@@ -11,13 +11,14 @@ function TaskList({ tasks, updateTasks }) {
     console.log(tasks);
   }, [tasks]);
 
-  const countPoints = (searchIndex) => {
+  const countPoints = (searchIndex, event) => {
     let taskPoints = tasks[searchIndex].points;
     if (tasks[searchIndex].pointsAwarded === false) {
       tasks[searchIndex].points = formData.points; 
       tasks[searchIndex].pointsAwarded = true;
     } else {
-      document.getElementById("task-button").disabled = true;
+
+      event.target.disabled = true;
     }
 
     updatePoints(points + taskPoints);
@@ -101,8 +102,8 @@ function TaskList({ tasks, updateTasks }) {
 
                 <button
                   className="DidIt-button but-height"
-                  onClick={() => {
-                    countPoints(index);
+                  onClick={(e) => {
+                    countPoints(index,e);
                   }}
                 >
                   Did It!

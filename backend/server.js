@@ -1,4 +1,3 @@
-// postgres://ownaeebr:diD7xGuoK_6jf4z_3gmuPe1_OIY3gyqk@stampy.db.elephantsql.com/ownaeebr
 const express = require('express');
 const app = express();
 const PORT = 3001;

@@ -1,11 +1,11 @@
 
 {
   "development": {
-    "username": "ownaeebr",
-    "password": "diD7xGuoK_6jf4z_3gmuPe1_OIY3gyqk",
-    "database": "ownaeebr",
+    "username": "jhsydfeo",
+    "password": "diD22GuoK_6jf4z_4gmuPe1_OIY3hyqk",
+    "database": "jhsydfeo",
     "host": "stampy.db.elephantsql.com",
-    "dialect": "postgres"
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",

@@ -62,7 +62,9 @@ function TaskList({ tasks, updateTasks }) {
   const handleEditSubmit = (event, index) => {
     event.preventDefault();
     let newTasks = [...tasks];
+
     newTasks[index].name = formData.name;
+    
     newTasks[index].points = formData.points;
     updateTasks(newTasks);
     setEditIndex(null);
@@ -74,11 +76,11 @@ function TaskList({ tasks, updateTasks }) {
         <div className="row">
           <div className="col-6">
           
-            <h6 className="formLabels">Drag and Drop to re-order Tasks</h6>
+            <h6 className="formLabels"  style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}> Drag and Drop to re-order Tasks</h6>
           </div>
           <div className="col-6">
             <br />
-            <h6 className="formLabels" >Points Earned: {points}</h6>
+            <h6 className="formLabels" style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}> Points Earned: {points}</h6>
           </div>
         </div>
 

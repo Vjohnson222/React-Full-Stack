@@ -7,23 +7,23 @@ function Extra() {
       { id: 2, name: "16. Next run the model migration", points: 20 },
       { id: 3, name: "3. In Be Keeper – Select:  Import From URL", points: 30 },
       { id: 4, name: "14. Build your Models with Sequelize", points: 40 },
-      { id: 1, name: "4. Create a new folder on your device and name it accordingly", points: 10 },
-      { id: 2, name: "8. Initialize Sequelize with Sequelize init – This creates the CLI", points: 20 },
-      { id: 3, name: "10. Time to build a server", points: 30 },
-      { id: 4, name: "19. Go into the migrations and update the nullable status to allowNull: false", points: 40 },
-      { id: 1, name: "1. Create a DB – Go to Elephant SQL – Create a new Instance", points: 10 },
-      { id: 2, name: "20. Declare your associations (if needed)", points: 20 },
-      { id: 3, name: "5. Open that folder in your code editor", points: 30 },
-      { id: 4, name: "11. Create a server.js file", points: 40 },
-      { id: 1, name: "15.Here's an example: sequelize model:generate --name blog --attributes title:string, author:string", points: 10 },
-      { id: 1, name: "19.Go into the migrations and updatethe nullable status to allowNull: false, author:string", points: 10 },
-      { id: 3, name: "6. Next- npm init -y", points: 30 },
-      { id: 4, name: "2. Grab the Database Link and head over to Beekeeper", points: 40 },
-      { id: 4, name: "9. Update the config.json with the appropriate Database information", points: 40 },
-      { id: 4, name: "17. Next !!!! Run the migration with ", points: 40 },
-      { id: 4, name: "21. Create your first endpoint with a Get request", points: 40 },
-      { id: 4, name: "13. Test it ", points: 40 },
-      { id: 4, name: "7. Install the dependencies express Sequelize pg pg-hstore", points: 40 },
+      { id: 5, name: "4. Create a new folder on your device and name it accordingly", points: 10 },
+      { id: 6, name: "8. Initialize Sequelize with Sequelize init – This creates the CLI", points: 20 },
+      { id: 7, name: "10. Time to build a server", points: 30 },
+      { id: 8, name: "19. Go into the migrations and update the nullable status to allowNull: false", points: 40 },
+      { id: 9, name: "1. Create a DB – Go to Elephant SQL – Create a new Instance", points: 10 },
+      { id: 10, name: "20. Declare your associations (if needed)", points: 20 },
+      { id: 11, name: "5. Open that folder in your code editor", points: 30 },
+      { id: 12, name: "11. Create a server.js file", points: 40 },
+      { id: 13, name: "15.Here's an example: sequelize model:generate --name blog --attributes title:string, author:string", points: 10 },
+      { id: 14, name: "19.Go into the migrations and updatethe nullable status to allowNull: false, author:string", points: 10 },
+      { id: 15, name: "6. Next- npm init -y", points: 30 },
+      { id: 16, name: "2. Grab the Database Link and head over to Beekeeper", points: 40 },
+      { id: 17, name: "9. Update the config.json with the appropriate Database information", points: 40 },
+      { id: 18, name: "17. Next !!!! Run the migration with ", points: 40 },
+      { id: 19, name: "21. Create your first endpoint with a Get request", points: 40 },
+      { id: 20, name: "13. Test it ", points: 40 },
+      { id: 21, name: "7. Install the dependencies express Sequelize pg pg-hstore", points: 40 },
 
 
     ]);
@@ -65,8 +65,12 @@ function Extra() {
     const handleEditSubmit = (event, index) => {
         event.preventDefault();
         let newFun = [...funList]; 
+
         newFun[index] = formData;
+
         updateFunList(newFun); 
+        setEditIndex(null);
+
       };
     
   return (
@@ -74,7 +78,7 @@ function Extra() {
     <div className="container4 Extra">
       <br />
                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-    <h5 style={{ color: "black"}}>Drag to Reorder The Steps Below for Proper Sequence</h5>
+                   <h5 style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}> Drag to Reorder The Steps Below for Proper Sequence</h5>
 </div>
 
 

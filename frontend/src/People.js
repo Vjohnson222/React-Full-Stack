@@ -27,6 +27,7 @@ return (
 {isVisible ? "Hide" : "Show"} All Users
 </button>
 </div>
+<br />
 {isVisible && (
 <div className="people-container name">
 <br />

@@ -28,11 +28,11 @@ function Form({ tasks, updateTasks }) {
         <div className="row  formLabels">
           <div className="col-4">
             <br />
-            <h6>Enter New Tasks</h6>
+            <h6 style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}>  Enter New Tasks</h6>
           </div>
           <div className="col-6">
             <br />
-            <h6>Add PointValue</h6>
+            <h6 style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}>    Add Point Value</h6>
           </div>
         </div>
         <form

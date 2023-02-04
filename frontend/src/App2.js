@@ -22,12 +22,13 @@ function App2() {
             HOME
           </Link>
           { loggedIn ? <Link className="navLink" to="/App">
-            TASK MANAGEMENT
+            TASKS
           </Link>: ""}
           
 
           <Link className="navLink" to="/Profile">
-            Welcome to Task Management
+            WELCOME TO TASK MANAGEMENT
+
           </Link>
 
           { loggedIn ?   <Link className="navLink" to="/Extra">

@@ -47,15 +47,15 @@ function Profile(props) {
 {!isHidden ? (
   <div className="row formLabels">
    
-          <h1>Create a User Profile</h1>
+          {/* <h1>Create a User Profile</h1> */}
 
     <div className="col-3">
       <br />
-      <h6>Enter Name</h6>
+      <h6 style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}>   Enter Name</h6>
     </div>
     <div className="col-4 offset-1">
       <br />
-      <h6>Enter Email</h6>
+      <h6 style={{ color: "white", fontFamily: 'Times New Roman, Times, serif' }}> Enter Email</h6>
     </div>
   </div>
 ) : null}
@@ -93,10 +93,10 @@ function Profile(props) {
         </form>
       )}
       {!showForm && (
-              <div style={{ position: "absolute", right: "28%",marginLeft: "120px", top: "102px", color: "white", fontSize: "22px"}}><h3>Hello {name},</h3>
-              <h3>Welcome to your Task Management portal</h3>
-              <p>Take a look around.</p> 
-<p style={{ textIndent: '30px',}}>Use the "Task Management" section to complete the needed tasks and earn points as you do.</p>
+              <div style={{ position: "absolute", right: "28%",marginLeft: "120px", top: "102px", color: "white", fontSize: "22px"}}><h3>Welcome {name}!</h3>
+              {/* <h3>Welcome to your Task Management portal</h3> */}
+              <br />
+<p style={{ textIndent: '30px',}}>Take a look around. Use the "Task Management" section to complete the needed tasks and earn points as you do.</p>
 <p style={{ textIndent: '30px',}}>Another awesome option is to visit the "Extra Page". Here you will be presented with a sequence of steps that will enable you to create a database and connect it to your working application. Pay close attention here. You will most likely have to do this several times throughout your web-dev career.</p>
 <p style={{ textIndent: '30px',}}> Lastly, feel free to hit the "Show all Users" button above to see and connect with others in your web-dev community.</p>
 </div>
@@ -104,7 +104,7 @@ function Profile(props) {
       )}
       <div>
         <div>
-          <span style={{ position: "absolute", right: "8%", top: "27px" }}>
+          <span style={{ position: "absolute", right: "2%", top: "90px", color: "white", fontFamily: 'Times New Roman, Times, serif' }}>
             <People />
           </span>
         </div>

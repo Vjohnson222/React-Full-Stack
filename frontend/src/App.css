@@ -18,13 +18,23 @@
 .transparent-bg {
   background: transparent;
 }
+
+/* PeopleButon */
 .custom-button {
   border: none; 
   background-color: transparent; 
   color: white; 
-  font-size: 26px;
+  font-size: 15px;
   border: 1px solid white;
-  border-radius: 10%;
+  border-radius: 5%;
+  text-align: center;
+  margin-right: 120px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 .white-text {
@@ -60,7 +70,6 @@
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: 960px;
-  /* left to right  */
   background-position-x: 1040px;
   background-position-y: 15px;
   left: 200px;
@@ -309,11 +318,24 @@ body {
   border: none;
 
 }
+.delete-button {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 10%;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+
+}
 
 .edit-button {
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 90%;
   transform: translate(-50%, -50%);
   width: 80px;
   height: 30px;
@@ -324,19 +346,7 @@ body {
 
 }
 
-.delete-button {
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 30px;
-  border-radius: 10%;
-  font-size: 12px;
-  font-weight: bold;
-  border: none;
 
-}
 
 
 

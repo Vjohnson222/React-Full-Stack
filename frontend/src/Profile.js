@@ -94,7 +94,6 @@ function Profile(props) {
       )}
       {!showForm && (
               <div style={{ position: "absolute", right: "28%",marginLeft: "120px", top: "102px", color: "white", fontSize: "22px"}}><h3>Welcome {name}!</h3>
-              {/* <h3>Welcome to your Task Management portal</h3> */}
               <br />
 <p style={{ textIndent: '30px',}}>Take a look around. Use the "Task Management" section to complete the needed tasks and earn points as you do.</p>
 <p style={{ textIndent: '30px',}}>Another awesome option is to visit the "Extra Page". Here you will be presented with a sequence of steps that will enable you to create a database and connect it to your working application. Pay close attention here. You will most likely have to do this several times throughout your web-dev career.</p>

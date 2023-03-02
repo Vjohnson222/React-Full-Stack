@@ -213,6 +213,8 @@ font-size: 22px;
   cursor: pointer;
   margin-left: 50px;
   font-size: 22px;
+  padding-right: 80px;
+
 
 }
 
@@ -344,6 +346,11 @@ body {
   font-weight: bold;
   border: none;
 
+}
+.navLink {
+  word-spacing: .5em; /* Adjust the value as needed to add more or less space */
+  font: lighter;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

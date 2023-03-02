@@ -6,6 +6,8 @@
     "host": "stampy.db.elephantsql.com",
     "dialect": "postgres"
   },
+
+  
   "test": {
     "username": "root",
     "password": null,

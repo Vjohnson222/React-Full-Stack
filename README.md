@@ -29,20 +29,18 @@ Below Please find a visual representation  reflective of the navigation bar's la
 > HOME PAGE
 ![result-1](https://github.com/Vjohnson222/React-Full-Stack/blob/main/face.png?raw=true)
 
-> INTRODUCTION
-![result-1](https://github.com/Vjohnson222/Capstone/blob/main/introduction.PNG?raw=true)
+> USER-PROFILE SIGN UP 
+![result-1](https://github.com/Vjohnson222/React-Full-Stack/blob/main/userProfile.png?raw=true)
 
-> TERMINOLOGY
-![result-1](https://github.com/Vjohnson222/Capstone/blob/main/terminology.PNG?raw=true)
+> WELCOME
+![result-1](https://github.com/Vjohnson222/React-Full-Stack/blob/main/welcome.png?raw=true)
 
-> GALLERY
-![result-1](https://github.com/Vjohnson222/Capstone/blob/main/gallery.PNG?raw=true)
+> WELCOME/ SHOWING USERS IN DATABASE
+![result-1](https://github.com/Vjohnson222/React-Full-Stack/blob/main/welcome2.png?raw=true)
 
-> YOUR TURN
-![result-1](https://github.com/Vjohnson222/Capstone/blob/main/your.PNG?raw=true)
+> TASKS
+![result-1](https://github.com/Vjohnson222/React-Full-Stack/blob/main/tasks.png?raw=true)
 
-> VIDEOS:1
-![result-1](https://github.com/Vjohnson222/Capstone/blob/main/video1.PNG?raw=true)
+> THE EXTRAS PAGE
+![result-1](https://github.com/Vjohnson222/React-Full-Stack/blob/main/extra.png?raw=true)
 
-> VIDEOS2
-![result-1](https://github.com/Vjohnson222/Capstone/blob/main/video2.PNG?raw=true)
